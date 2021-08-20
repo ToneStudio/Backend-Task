@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Resume Page</title>
+    <style>
+      img {
+        width: 200px;
+        border-radius: 50px;
+        float: left;
+        margin-right: 10px;
+      }
+
+      h1 {
+        font-size: 50px;
+        color: steelblue;
+      }
+
+      h2 {
+        font-size: 20px;
+        background-color: lightgray;
+        color: steelblue;
+      }
+
+      h3 {
+        font-size: 18px;
+        background-color: lightgray;
+        color: steelblue;
+      }
+      p {
+        color: steelblue;
+      }
+      form {
+        /* Center the form on the page */
+        margin: 0 auto;
+        width: 500px;
+        /* Form outline */
+        padding: 1em;
+        border: 1px solid #ccc;
+        border-radius: 1em;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      form li + li {
+        margin-top: 1em;
+      }
+
+      label {
+        /* Uniform size & alignment */
+        display: inline-block;
+        width: 90px;
+        text-align: right;
+      }
+
+      input,
+      textarea {
+        /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+        font: 1em sans-serif;
+
+        /* Uniform text field size */
+        width: 300px;
+        box-sizing: border-box;
+
+        /* Match form field borders */
+        border: 1px solid #999;
+      }
+
+      input:focus,
+      textarea:focus {
+        /* Additional highlight for focused elements */
+        border-color: #000;
+      }
+
+      textarea {
+        /* Align multiline text fields with their labels */
+        vertical-align: top;
+
+        /* Provide space to type some text */
+        height: 5em;
+      }
+
+      .button {
+        /* Align buttons with the text fields */
+        padding-left: 90px; /* same size as the label elements */
+      }
+
+      button {
+        /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+        margin-left: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="mic.jpg" alt="" />
+    <h1>MICHAEL OGUNNAIKE</h1>
+    <p>murfygold@gmail.com | 09024253062</p>
+    <b> </b>
+    <h2>PROFILE</h2>
+
+    <p>
+      A confident and reliable media & IT professional with extensive practical
+      experience of working with computers, audio-visual equipment, and
+      resolving issues that are raised. Worked on producing sound and visuals
+      for live shows, trainings, as well as studio recordings. Having the
+      personal drive required to deliver a service that exceeds the expectations
+      of colleagues and end users through a positive, well organized and
+      structured work ethic.
+    </p>
+
+    <h2>WORK EXPERIENCE</h2>
+
+    <p>2020–date Audio Engineer • The Father’s House Church, Ojodu, Lagos.</p>
+    <p>2020 AV/Broadcast Engineer • Legex Partners, Lekki Phase 1, Lagos.</p>
+    <p>2017–2018 Studio Manager • Associate • Emplug Media, Ikeja, Lagos.</p>
+    <p>2014–date Head,Media • MTP Media, Ojodu, Lagos.</p>
+
+    <h2>EDUCATION</h2>
+
+    <p>Online • Software Development, 2021.</p>
+    <p>Online • Video and 3D Design, 2019.</p>
+    <p>Online • Project Management, 2017.</p>
+    <p>Google Digital Skills for Africa (Online) • Digital Marketing, 2017.</p>
+    <p>Yaba College of Technology, Lagos. • HND, Computer Engineering, 2015.</p>
+
+    <h2>AREAS OF EXPERTISE</h2>
+
+    <p>Video & Audio production</p>
+    <p>AV Design</p>
+    <p>Networking</p>
+    <p>Project management</p>
+    <p>StudiO Design</p>
+
+    <h2>REFERENCES</h2>
+
+    <p>Mr. Great O 08033445566</p>
+    <p>Debo A. 08188885555</p>
+
+    <h3>Contact</h3>
+
+    <form action="/my-handling-form-page" method="post">
+      <ul>
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" />
+        </li>
+        <li>
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" name="user_email" />
+        </li>
+        <li>
+          <label for="msg">Message:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </li>
+        <li class="button">
+          <button type="submit">Send your message</button>
+        </li>
+      </ul>
+    </form>
+  </body>
+</html>
